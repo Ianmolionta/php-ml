@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('nilai', function (Blueprint $table) {
             $table->id();
-            $table->integer('IPK');
-            $table->integer('Jumlah_SKS');
-            $table->string('kehadiran');
-            $table->enum('kelulusan', ['Lulus', 'Tidak Lulus']);
+            $table->integer('Usia');
+            $table->integer('Jenis_Kelamin');
+            $table->integer('Berat_Badan');
+            $table->integer('Tinggi_Badan');
+            $table->boolean('IMD');
+            $table->enum('Status', ['Gizi_baik', 'Gizi_buruk']);
             $table->timestamps();
         });
     }

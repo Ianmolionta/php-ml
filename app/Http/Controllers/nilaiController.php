@@ -27,5 +27,5 @@ class nilaiController extends Controller
         $nilai->kelulusan = $request->kelulusan;
         $nilai->save();
         return redirect('example');
-    }
+    }   
 }

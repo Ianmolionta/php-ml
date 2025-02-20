@@ -9,9 +9,11 @@ class nilaiModel extends Model
     protected $table = 'nilai';
     protected $fillable = 
     [
-        'IPK', 
-        'Jumlah_SKS', 
-        'kehadiran', 
-        'kelulusan'
+        'Usia',
+        'Jenis_Kelamin',
+        'Berat_Badan',
+        'Tinggi_Badan',
+        'IMD',
+        'Status'
     ];
 }
